@@ -1,0 +1,24 @@
+{
+  "database": {
+    "server": "YOUR_SQL_SERVER_NAME.database.windows.net",
+    "database": "YOUR_DATABASE_NAME",
+    "authentication": {
+      "type": "azure-active-directory-default"
+    },
+    "options": {
+      "encrypt": true,
+      "trustServerCertificate": false
+    }
+  },
+  "server": {
+    "port": 3000
+  },
+  "cors": {
+    "origin": "https://YOUR_STATIC_WEB_APP_URL.azurestaticapps.net",
+    "credentials": true
+  },
+  "app": {
+    "name": "Field Service Management",
+    "companyCode": "YOUR_COMPANY_CODE"
+  }
+}
